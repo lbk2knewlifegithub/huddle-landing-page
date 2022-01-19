@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  :root {
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-bold;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply py-3 px-5 rounded-full inline-block hover:opacity-50 duration-500;
+  }
+
+  .btn-basic {
+    @apply bg-white text-primary-900 hover:bg-primary-800 hover:text-white;
+  }
+
+  .btn-large {
+    @apply px-20;
+  }
+
+  .bg{
+@apply absolute h-full w-full top-0 left-0 z-[-1] object-cover;
+  }
+}
