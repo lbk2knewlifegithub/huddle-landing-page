@@ -2,10 +2,10 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Link } from './models';
 
 @Component({
-  selector: 'lbk-footer',
+  selector: 'lbk-socials',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <footer class="container">
+    <div class="container">
       <ul class="flex gap-4 justify-center lg:justify-end">
         <ng-container *ngFor="let link of links">
           <li
@@ -20,12 +20,10 @@ import { Link } from './models';
           </li>
         </ng-container>
       </ul>
-
-
-    </footer>
+    </div>
   `,
 })
-export class FooterComponent {
+export class SocialsComponent {
   links: Link[] = [
     {
       name: 'Facebook',

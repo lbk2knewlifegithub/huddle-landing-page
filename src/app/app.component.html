@@ -10,23 +10,33 @@
   alt="Background Desktop"
 />
 
-<header>
-  <div class="container mt-8 md:mt-10">
+<header class="mt-8 lg:w-full md:mt-10 lg:absolute">
+  <div class="container">
     <a href="#">
-      <img class="max-w-[150px] lg:max-w-none" src="assets/images/logo.svg" alt="Logo" />
+      <img
+        class="max-w-[150px] lg:max-w-none"
+        src="assets/images/logo.svg"
+        alt="Logo"
+      />
     </a>
   </div>
 </header>
 
-<main class="relative flow-root text-white mt-20 md:mt-40">
+<main class="relative flow-root mt-20 text-white md:mt-40 lg:mt-0">
   <div
-    class="container grid place-items-center gap-20 lg:grid-cols-2 lg:gap-20"
+    class="container relative grid gap-20 place-items-center lg:grid-cols-5 lg:gap-10 lg:h-screen"
   >
-    <img src="assets/images/illustration-mockups.svg" alt="Illustration" />
+    <img
+      class="lg:col-span-3"
+      src="assets/images/illustration-mockups.svg"
+      alt="Illustration"
+    />
 
-    <div class="grid place-items-center max-w-2xl lg:place-items-start">
+    <div
+      class="grid max-w-2xl place-items-center lg:place-items-start lg:col-span-2"
+    >
       <div class="text-center lg:text-left">
-        <h1 class="text-white text-3xl leading-10 lg:text-4xl">
+        <h1 class="text-3xl leading-10 text-white lg:text-4xl">
           Build The Community Your Fans Will Love
         </h1>
 
@@ -37,11 +47,17 @@
         </p>
       </div>
 
-      <a href="#" class="btn btn-basic btn-large mt-6 md:mt-10">Register</a>
+      <a href="#" class="mt-6 btn btn-basic btn-large md:mt-10">Register</a>
     </div>
+
+    <lbk-socials
+      class="block my-20 md:my-28 lg:absolute lg:right-5 lg:bottom-20 lg:m-0"
+    ></lbk-socials>
   </div>
 </main>
 
-<lbk-footer class="block my-20 md:my-32"></lbk-footer>
-
-<lbk-author class="block mt-20 lg:fixed lg:w-full lg:bottom-0 z-50"></lbk-author>
+<footer>
+  <lbk-author
+    class="z-50 block lg:fixed lg:w-full lg:bottom-2"
+  ></lbk-author>
+</footer>

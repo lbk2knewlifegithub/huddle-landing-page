@@ -38,7 +38,7 @@ module.exports = {
     plugin(function ({ addComponents }) {
       addComponents({
         ".container": {
-          maxWidth: "1200px",
+          maxWidth: "1280px",
         },
       });
     }),
