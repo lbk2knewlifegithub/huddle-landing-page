@@ -18,18 +18,18 @@
 
 @layer components {
   .btn {
-    @apply py-3 px-5 rounded-full inline-block hover:opacity-50 duration-500;
+    @apply py-3 px-5 rounded-full inline-block hover:opacity-50 duration-150;
   }
 
   .btn-basic {
-    @apply bg-white text-primary-900 hover:bg-primary-800 hover:text-white;
+    @apply bg-white text-primary-900 shadow-md hover:bg-primary-800 hover:text-white;
   }
 
   .btn-large {
-    @apply px-20;
+    @apply px-20 lg:px-16;
   }
 
-  .bg{
-@apply absolute h-full w-full top-0 left-0 z-[-1] object-cover;
+  .bg {
+    @apply absolute h-full w-full top-0 left-0 z-[-1] object-cover;
   }
 }

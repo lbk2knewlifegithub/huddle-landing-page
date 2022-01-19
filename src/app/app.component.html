@@ -10,11 +10,11 @@
   alt="Background Desktop"
 />
 
-<header class="mt-8 lg:w-full md:mt-10 lg:absolute">
+<header class="mt-8 lg:w-full md:mt-10">
   <div class="container">
     <a href="#">
       <img
-        class="max-w-[150px] lg:max-w-none"
+        class="max-w-[150px] lg:max-w-[180px]"
         src="assets/images/logo.svg"
         alt="Logo"
       />
@@ -22,42 +22,40 @@
   </div>
 </header>
 
-<main class="relative flow-root mt-20 text-white md:mt-40 lg:mt-0">
-  <div
-    class="container relative grid gap-20 place-items-center lg:grid-cols-5 lg:gap-10 lg:h-screen"
-  >
-    <img
-      class="lg:col-span-3"
-      src="assets/images/illustration-mockups.svg"
-      alt="Illustration"
-    />
-
+<main class="relative flow-root mt-20 text-white md:mt-40 lg:mt-24">
+  <div class="container">
     <div
-      class="grid max-w-2xl place-items-center lg:place-items-start lg:col-span-2"
+      class="relative grid gap-20 place-items-center lg:grid-cols-5 lg:gap-10"
     >
-      <div class="text-center lg:text-left">
-        <h1 class="text-3xl leading-10 text-white lg:text-4xl">
-          Build The Community Your Fans Will Love
-        </h1>
+      <img
+        class="lg:col-span-3"
+        src="assets/images/illustration-mockups.svg"
+        alt="Illustration"
+      />
 
-        <p class="mt-4 text-lg font-medium">
-          Huddle re-imagines the way we build communities. You have a voice, but
-          so does your audience. Create connections with your users as you
-          engage in genuine discussion.
-        </p>
+      <div
+        class="grid max-w-2xl place-items-center lg:place-items-start lg:col-span-2"
+      >
+        <div class="text-center lg:text-left">
+          <h1 class="text-3xl leading-10 text-white lg:text-4xl">
+            Build The Community Your Fans Will Love
+          </h1>
+
+          <p class="mt-4 text-lg font-medium lg:mt-8">
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+        </div>
+
+        <a href="#" class="mt-6 btn btn-basic btn-large md:mt-10">Register</a>
       </div>
-
-      <a href="#" class="mt-6 btn btn-basic btn-large md:mt-10">Register</a>
     </div>
 
-    <lbk-socials
-      class="block my-20 md:my-28 lg:absolute lg:right-5 lg:bottom-20 lg:m-0"
-    ></lbk-socials>
+    <lbk-socials class="block my-20 md:my-28 lg:mr-auto"></lbk-socials>
   </div>
 </main>
 
 <footer>
-  <lbk-author
-    class="z-50 block lg:fixed lg:w-full lg:bottom-2"
-  ></lbk-author>
+  <lbk-author class="z-50 block lg:fixed lg:w-full lg:bottom-2"></lbk-author>
 </footer>

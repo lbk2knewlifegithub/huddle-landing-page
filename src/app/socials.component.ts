@@ -5,22 +5,20 @@ import { Link } from './models';
   selector: 'lbk-socials',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <div class="container">
-      <ul class="flex gap-4 justify-center lg:justify-end">
-        <ng-container *ngFor="let link of links">
-          <li
-            class="duration-500 group border rounded-full w-9 h-9 grid place-content-center  hover:border-primary-800"
+    <ul class="flex gap-4 justify-center lg:justify-end">
+      <ng-container *ngFor="let link of links">
+        <li
+          class="duration-500 group border rounded-full w-9 h-9 grid place-content-center  hover:border-primary-800"
+        >
+          <a
+            href="#"
+            class="text-white text-lg block group-hover:text-primary-800"
           >
-            <a
-              href="#"
-              class="text-white text-lg block group-hover:text-primary-800"
-            >
-              <span [classList]="link.icon"></span>
-            </a>
-          </li>
-        </ng-container>
-      </ul>
-    </div>
+            <span [classList]="link.icon"></span>
+          </a>
+        </li>
+      </ng-container>
+    </ul>
   `,
 })
 export class SocialsComponent {
